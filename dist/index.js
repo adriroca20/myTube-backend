@@ -13,7 +13,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 3000;
 app.use((0, cors_1.default)({
-    origin: 'http://localhost:5173',
+    origin: "https://my-tube-frontend-3mfg.vercel.app",
 }));
 app.use(body_parser_1.default.json());
 app.get("/", (req, res) => {
